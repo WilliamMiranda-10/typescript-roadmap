@@ -17,3 +17,6 @@ data.age = 31;
 
 console.log(data.age);
 
+console.log(typeof(data))
+
+
