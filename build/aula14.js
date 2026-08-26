@@ -1,12 +1,12 @@
 "use strict";
-// Arrow Function
+// ARROW FUNCTIONS
 Object.defineProperty(exports, "__esModule", { value: true });
 const test = (txt) => {
     //  "?" -> paramentro opcional
     console.log(txt);
 };
-test("Olá Mundo!!!");
-test(); // ---> nao passei nem um valor pois o parametro e opcional
+test("Olá Mundo!!!"); // Olá Mundo!!!
+test(); // undefined ---> nao passei nem um valor pois o parametro e opcional
 const sum = (array) => {
     let total = 0;
     array.forEach((valor) => {
@@ -16,4 +16,4 @@ const sum = (array) => {
 };
 let numbers = [12, 26, 33, 59, 48, 55];
 const total = sum(numbers);
-console.log("Valor total:", total);
+console.log("Valor total:", total); // Valor total: 233

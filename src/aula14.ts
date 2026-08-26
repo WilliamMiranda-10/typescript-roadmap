@@ -1,12 +1,12 @@
-// Arrow Function
+// ARROW FUNCTIONS
 
 const test = (txt?: string): void => {
   //  "?" -> paramentro opcional
   console.log(txt);
 };
 
-test("Olá Mundo!!!");
-test(); // ---> nao passei nem um valor pois o parametro e opcional
+test("Olá Mundo!!!"); // Olá Mundo!!!
+test(); // undefined ---> nao passei nem um valor pois o parametro e opcional
 
 const sum = (array: number[]) => {
   let total: number = 0;
@@ -21,4 +21,4 @@ let numbers = [12, 26, 33, 59, 48, 55];
 
 const total: number = sum(numbers);
 
-console.log("Valor total:", total);
+console.log("Valor total:", total); // Valor total: 233
