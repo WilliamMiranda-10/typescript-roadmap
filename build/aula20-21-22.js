@@ -17,13 +17,22 @@ class Conta {
         console.log("Número:", this.numero);
     }
     saldo() {
-        return this.saldoConta;
+        console.log("Saldo da conta:", this.saldoConta);
     }
     deposito(valor) {
         this.saldoConta += valor;
     }
     saque(valor) {
-        this.saldoConta -= valor;
+        if (valor < 0) {
+            console.log("Valor inválido!");
+            return;
+        }
+        if (valor <= this.saldoConta) {
+            this.saldoConta -= valor;
+        }
+        else {
+            console.log("Saldo insuficiente");
+        }
     }
 }
 class ContaPF extends Conta {
@@ -39,11 +48,19 @@ class ContaPF extends Conta {
         console.log("========================");
     }
     deposito(valor) {
-        if (valor < 0 || valor >= 1000) {
+        if (valor < 0 || valor > 1000) {
             console.log("Depósitos em conta de pessoa física: valor máximo de R$ 1.000,00.");
         }
         else {
             super.deposito(valor);
+        }
+    }
+    saque(valor) {
+        if (valor > 1000) {
+            console.log("Saque em conta de pessoa física: valor máximo de R$ 1.000,00.");
+        }
+        else {
+            super.saque(valor);
         }
     }
 }
@@ -60,15 +77,29 @@ class ContaPJ extends Conta {
         console.log("========================");
     }
     deposito(valor) {
-        if (valor < 0 || valor >= 10000) {
+        if (valor < 0 || valor > 10000) {
             console.log("Depósitos em conta de pessoa jurídica: valor máximo de R$ 10.000,00.");
         }
         else {
             super.deposito(valor);
         }
     }
+    saque(valor) {
+        if (valor > 10000) {
+            console.log("Saque em conta de pessoa jurídica: valor máximo de R$ 10.000,00.");
+        }
+        else {
+            super.saque(valor);
+        }
+    }
 }
 const contaPfisica = new ContaPF(1565589432, "William");
 const contaPJuridica = new ContaPJ(4556889000115, "Top Marmore");
-contaPfisica.info();
-contaPJuridica.info();
+// contaPfisica.info();
+// contaPJuridica.info();
+// contaPJuridica.deposito(5000);
+// contaPJuridica.saldo()
+contaPfisica.deposito(1000);
+contaPfisica.saldo();
+contaPfisica.saque(150.9);
+contaPfisica.saldo();
