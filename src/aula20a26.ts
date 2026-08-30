@@ -1,5 +1,5 @@
-class Conta {
-  protected numero: number; // private pode ser acessado somente pela propria classe
+abstract class Conta { 
+  private readonly numero: number; // private pode ser acessado somente pela propria classe
   protected titular: string; // protected somente classe pai e filho
   private saldoConta: number; // public pode ser acessada por qualquer lugar
 
@@ -120,3 +120,6 @@ contaPfisica.saldo();
 
 contaPfisica.saque(150.9);
 contaPfisica.saldo();
+
+contaPfisica.info();
+

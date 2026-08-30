@@ -103,3 +103,4 @@ contaPfisica.deposito(1000);
 contaPfisica.saldo();
 contaPfisica.saque(150.9);
 contaPfisica.saldo();
+contaPfisica.info();
