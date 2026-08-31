@@ -25,3 +25,10 @@ const userJo: User = {
 
 console.log(userWilliam);
 console.log(userJo);
+
+function createUser(user: User): void {
+  console.log(`Usuário ${user.name} criado com sucesso!`);
+}
+
+createUser(userWilliam);
+ 
