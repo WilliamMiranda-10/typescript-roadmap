@@ -1,6 +1,4 @@
-"use strict";
 //  FUNCTION
-Object.defineProperty(exports, "__esModule", { value: true });
 function loginUser(email, password) {
     console.log("Email:", email);
     console.log("Password:", password);
@@ -14,3 +12,4 @@ let resNumber = soma(15, 33);
 console.log(resNumber);
 let resString = soma(8, 2).toString();
 console.log(resString);
+export {};

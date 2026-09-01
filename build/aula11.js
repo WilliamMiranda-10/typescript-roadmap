@@ -1,6 +1,4 @@
-"use strict";
 // TYPE ASSERTION E TYPECAST
-Object.defineProperty(exports, "__esModule", { value: true });
 let numberValue;
 let stringValue;
 let unknownValue;
@@ -28,3 +26,4 @@ stringValue = numberValue.toString();
 console.log(stringValue);
 nvalue = Number.parseInt(svalue);
 console.log(nvalue);
+export {};

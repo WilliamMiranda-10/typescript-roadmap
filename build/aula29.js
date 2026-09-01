@@ -1,6 +1,4 @@
-"use strict";
 // GENERICS
-Object.defineProperty(exports, "__esModule", { value: true });
 function retornar(valor) {
     return valor;
 }
@@ -15,3 +13,4 @@ class Test {
 }
 const test1 = new Test(15);
 console.log(test1.valor);
+export {};

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Conta {
     numero; // private pode ser acessado somente pela propria classe
     titular; // protected somente classe pai e filho
@@ -104,3 +102,4 @@ contaPfisica.saldo();
 contaPfisica.saque(150.9);
 contaPfisica.saldo();
 contaPfisica.info();
+export {};

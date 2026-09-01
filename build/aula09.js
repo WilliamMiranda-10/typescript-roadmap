@@ -1,6 +1,4 @@
-"use strict";
 // ENUM -> ENUMERADORES
-Object.defineProperty(exports, "__esModule", { value: true });
 var days;
 (function (days) {
     days[days["domingo"] = 1] = "domingo";
@@ -37,3 +35,4 @@ var tiposUsuarios;
 console.log(tiposUsuarios.ADMIN);
 const tp = tiposUsuarios.SUPER;
 console.log(tp);
+export {};

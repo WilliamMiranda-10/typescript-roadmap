@@ -1,6 +1,4 @@
-"use strict";
 // ARROW FUNCTIONS
-Object.defineProperty(exports, "__esModule", { value: true });
 const test = (txt) => {
     //  "?" -> paramentro opcional
     console.log(txt);
@@ -17,3 +15,4 @@ const sum = (array) => {
 let numbers = [12, 26, 33, 59, 48, 55];
 const total = sum(numbers);
 console.log("Valor total:", total); // Valor total: 233
+export {};

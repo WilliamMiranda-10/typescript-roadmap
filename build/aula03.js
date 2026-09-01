@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class User {
     name;
     age;
@@ -12,3 +10,4 @@ class User {
 }
 const william = new User("William", 30, "will123@gmail.com");
 console.log(william.name);
+export {};

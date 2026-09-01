@@ -1,6 +1,4 @@
-"use strict";
 // FUNCTION -> PARÂMETROS PADRÕES E OPCIONAIS
-Object.defineProperty(exports, "__esModule", { value: true });
 function soma(n1 = 0, n2 = 0) {
     return n1 + n2;
 }
@@ -11,3 +9,4 @@ function newUser(email, password, name) {
     console.log("Nome:", name); // Nome: undefined
 }
 newUser("William123@gmail.com", "12345");
+export {};

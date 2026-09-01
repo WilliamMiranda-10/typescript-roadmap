@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const userWilliam = {
     name: "William",
     age: 30,
@@ -20,3 +18,4 @@ function createUser(user) {
     console.log(`Usuário ${user.name} criado com sucesso!`);
 }
 createUser(userWilliam);
+export {};

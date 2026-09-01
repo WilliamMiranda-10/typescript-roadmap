@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Computador {
     id;
     nome;
@@ -38,3 +36,4 @@ const comp1 = new Computador("PC Gamer", 64, 9);
 comp1.ligar();
 comp1.upgradeRam(32);
 comp1.info();
+export {};
